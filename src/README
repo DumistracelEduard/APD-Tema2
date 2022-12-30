@@ -1,0 +1,22 @@
+#Dumistracel Eduard-Costin 334CA#
+
+Tema2.java
+    ->realizez crearea threa-urilor de nivel 1 si de nivel 2.
+    ->am folosit StringBuilder pentru crearea Path-ului pana la fisierele
+      dorite
+    ->calculez dimensiunea fisierelor folosind functia Files.size("fisier")
+    ->deschid cele 2 fisiere in care o sa realizez scrierea
+    -> dau start() si join() la thread-urile de nivel 1
+
+Task1.java
+    ->reprezinta thread-urile de nivel 1 care citesc o bucata din fisierul
+      "orders.txt" alocata si din acea bucata citesc linie cu linie comenzi
+      si creez noi task-uri pentru thread-urile de nivel 2 care ruleaza pe
+      o bucata aleasa de din fisierul order_products.txt
+    ->verificam pozitia start si stop
+
+Worker.java
+    -> fiecare worker ii este alocata o bucata din fisier-ul de produse
+    si decrementeaza number (care reprezinta nr de produse cautate)
+    de fiecare data cand gaseste id comenzii cautate
+    -> workeri se opresc atunci cand nu mai exista task-uri de facut

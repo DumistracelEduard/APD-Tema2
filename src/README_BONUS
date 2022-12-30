@@ -1,0 +1,13 @@
+#Dumistracel Eduard-Costin 334CA#
+    Pentru realizarea citirii din fisier am citit dimensiunea fiecarui fisier
+si apoi fiecare thread isi lua o bucata care incepea de la start si pana la
+end.
+
+    start = id * dimensiune_fisier / nr_thread
+    end = Math.min((ID + 1) * dimensiune_fisier/nr_thread, dimensiune_fisier);
+
+    Apoi verificam daca start-ul se afla la inceputul unui fisier si end-ul
+la finalul unui fisier si daca nu mutam start-ul/end-ul pana se afla pe
+pozitia dorita.
+
+    Asa am realizat citirea din fisierul orders.txt si din order_products.txt
